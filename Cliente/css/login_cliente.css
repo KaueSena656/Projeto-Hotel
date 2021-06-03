@@ -1,0 +1,101 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		html, body{
+			box-sizing: border-box;
+			background-color: #eeeeee;
+			font-family: sans-serif;
+		}
+		.box{
+			height: 430px;
+			width: 30%;
+			margin: 125px 35% 0 35%;
+			background-color: white;
+			border: solid 2px #d9e4e5;
+			border-radius: 5px;
+		}
+		.bloco{
+			width: 100%;
+			height: 20px;
+		}
+		h2{
+
+			text-align: center;
+			justify-content: center;
+			color: #1a747f;
+			font-size: 28px;
+		}
+		hr{
+			width: 80%;
+			height: 2px;
+			border: none;
+			background-color: #1a747f;
+			margin: 5px 10% 20px 10%;
+		}
+		label{
+			font-size: 14px;
+			color:  #1a747f;
+			padding-left: 15px;
+		}
+		input{
+			width: 92%;
+			height: 26px;	
+			margin: 5px 4.8% 15px 3.2%;
+			border: 2px solid #dbdbdb;	
+			border-radius: 2px;
+		}
+		input[type="password"]{
+			margin: 0 0 15px 12px;
+		}
+		input[type="checkbox"]{
+			height: 12px;
+			width: 12px;
+		}
+		#lembrado{
+			transform: translateY(-30px);
+			font-size: 14px;
+			color:  #1a747f;
+			margin-left: 30px;
+		}
+		button{
+			transform: translateY(-15px);
+			width: 92%;
+			height: 30px;	
+			margin: 0 4.8% 10px 3.2%;
+			border: none;	
+			border-radius: 2px;
+			background-color: #3d9db3;
+			color: white;
+			font-size: 14px;
+			cursor: pointer;
+			outline: none;
+			transition: 0.3s;
+		}
+		button[type="button"]{
+			background-color: #48c53f;
+			margin-bottom: 0;
+		}
+		button:focus{
+			border: solid 2px #48c53f;
+		}
+		.rodape{
+			border-radius: 5px;
+			margin-top: 11px;
+			width: 100%;
+			height: 103px;
+			background-color: #e1eaeb;
+		}
+		.rodape p{
+			text-align: center;
+			padding-top: 10px;
+			font-size: 14px;
+			color: #1a747f;
+			margin-bottom: 25px;
+		}
+		#ks{
+			text-align: center;
+			font-size: 14px;
+			color: #1a747f;
+			transform: translateY(-13px);
+		}

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Teko:wght@300;400&display=swap" rel="stylesheet">
+	<title>Desenvolvedores</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html. body{
+			width: 100%;
+			height: 100%;
+		}
+		/*a{
+			padding-top: 20px;
+			font-size: 16px;
+			color: white;
+			font-family: 'Source Sans Pro', sans-serif;
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: underline;
+			}*/
+			@media (max-width: 425px){
+				#menu1 ul {
+		background-color: #fff;
+		padding: 0px;
+		margin: 0px;
+		list-style: none;
+		width: 100%;
+
+	}
+	#menu1 ul li {
+		display: inline;
+	}
+	#menu1 ul li h1 {
+		padding: 0px 10px;
+		display: inline-block;
+		color: #003163;
+		font: 40px "archivo narrow";
+		letter-spacing: .1em;
+	}
+	#menu1 ul li h4 {
+		padding: 0px 10px;
+		color: #003163;
+		font: 18px "teko", sans-serif;
+		letter-spacing: .1em;
+		margin: 0px 0px 10.72px;
+	}
+	#menu1 ul li h1:hover {
+		color: #b5a067;
+		transition-duration: 0.2s;
+
+	}
+	/* --------------------MENU 2-------------------------- */
+	nav#menu2 {
+		background-color: #131935;
+		height: 215px;
+	}
+	#menu2 ul {
+		padding:20px;
+		list-style: none;
+		font: 18px "teko", sans-serif;
+
+	}
+	#menu2 ul li {
+		text-align: center;
+		display: inline;
+		width: 100%;
+		padding: 8px, 16px;
+		letter-spacing: .05em;
+	}
+	#menu2 ul li a {
+		width: 100%;/*
+		padding: 2px 10px;*/
+		display: inline-block;
+		color: #FFFFFF;
+	}
+
+	.ante_rodape{
+	width: 100%;
+	height: 50px;
+	background-color: white;
+	bottom: 0;
+	}
+	.rodape{
+	width: 100%;
+	height: 80px;
+	background-color: #131935;
+	bottom: 0;
+	}
+	.rodape p{
+	padding-left: 20px;
+	padding-top: 5px;
+	font-size: 16px;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	}
+	.rodape a{
+	text-decoration: none;
+	color: white;
+	}
+	.social{
+	margin-left: 15px;
+	}
+	.social button{
+	top: 5px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin-left: 5px;
+	cursor: pointer;
+	background-color: #b5a067;
+	font-weight: bold;
+	color: #131935;
+	}
+
+				.desenvolvedores{
+					width: 90%;
+					height: 990px;
+					background-color: #131935;
+					margin: 50px 5% 0 5%;
+					border-radius: 5px;
+				}
+				.desenvolvedores_1{
+					width: 90%;
+					height: 1010px;
+					background-color: #131935;
+					margin: 50px 5% 0 5%;
+					border-radius: 5px;
+				}
+				.desenvolvedores_2{
+					width: 90%;
+					height: 1040px;
+					background-color: #131935;
+					margin: 50px 5% 0 5%;
+					border-radius: 5px;
+				}
+				.desenvolvedores_3{
+					width: 90%;
+					height: 1040px;
+					background-color: #131935;
+					margin: 50px 5% 0 5%;
+					border-radius: 5px;
+				}
+				.desenvolvedores_4{
+					width: 90%;
+					height: 1040px;
+					background-color: #131935;
+					margin: 50px 5% 0 5%;
+					border-radius: 5px;
+				}
+				#align_btn{
+					margin-top: -30px;
+				}
+				.espaco{
+					width: 100%;
+					height: 40px;
+				}
+				.aling{
+					width: 100%;
+					height: 95%;
+					float: left;
+					/*background-color: red;*/	
+				}
+				.dev{
+					width: 60%;
+					height: 200px;
+					border-radius: 50%;
+					margin: 0 20% 0 20%;
+					border: solid 4px #b5a067;
+					cursor: pointer;
+
+					transition: 1s;
+				}
+				.dev:hover{
+					opacity: 50%;
+					background-color: #eee;
+				}
+				.aluno h2{
+					color: #b5a067;
+					text-align: center;
+					padding-top: 20px;
+					text-align: center;
+					font-size: 38px;
+					font-family: 'Teko', sans-serif;
+					font-weight: normal;
+				}
+				.aluno p{
+					width: 92%;
+					margin:0px 4% 30px 4%;
+					text-align: justify;
+					color: white;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-size:16px;
+				}
+				.contratar{
+					background-color: #b5a067;
+					outline: none;
+					border: none;
+					border-radius: 2px;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-size: 16px;
+					color: black;
+					font-weight: bold;
+					cursor: pointer;
+					transition: 1s;
+					width: 50%;
+					margin: 0 25% 0 25%;
+					height: 40px;
+				}
+				.informacoes h2{
+					color: #b5a067;
+					padding-top: 0px;
+					font-size: 38px;
+					font-family: 'Teko', sans-serif;
+					font-weight: normal;
+					margin:30px 0 30px 28%;
+				}
+				.informacoes .topo{
+					transform: translateY(-20px);
+				}
+				.eixo{
+					transform: translateY(0px);
+				}
+				.informacoes input{
+					text-align: left;
+					font-size: 17px;
+					width: 90%;
+					margin: 0 5% 0 5%;
+					height: 40px;
+					border: none;
+					outline: none;
+					border-radius: 3px;
+					margin-bottom: 20px;
+					padding-left: 5px;
+				}
+				.informacoes p{
+					font-family: 'Source Sans Pro', sans-serif;
+					color: white;
+					margin-left: 5%;
+				}
+				.informacoes button{
+					background-color: #b5a067;
+					outline: none;
+					border: none;
+					border-radius: 2px;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-size: 16px;
+					color: black;
+					font-weight: bold;
+					cursor: pointer;
+					transition: 1s;
+					width: 50%;
+					margin: 10px 25% 0 25%;
+					height: 40px;
+				}
+				.desenvolvedores_4 .topo{
+					transform: translateY(-20px);
+				}
+				.desenvolvedores_4 .info{
+					margin: 50px 0 0 0%;
+					text-align: center;
+					padding-top: 0px;
+					font-size: 38px;
+					font-family: 'Teko', sans-serif;
+					font-weight: normal;
+				}
+			}
+
+
+			@media (min-width: 1200px) and (max-width: 2600px){
+				.desenvolvedores{
+					width: 90%;
+					height: 550px;
+					background-color: #131935;
+					margin: 50px 5% 0 5%;
+					border-radius: 5px;
+				}
+				.desenvolvedores_1{
+					width: 90%;
+					height: 550px;
+					background-color: #131935;
+					margin: 20px 5% 0 5%;
+					border-radius: 5px;
+				}
+				.desenvolvedores_2{
+					width: 90%;
+					height: 550px;
+					background-color: #131935;
+					margin: 20px 5% 0 5%;
+					border-radius: 5px;
+				}
+				.desenvolvedores_3{
+					width: 90%;
+					height: 550px;
+					background-color: #131935;
+					margin: 20px 5% 0 5%;
+					border-radius: 5px;
+				}
+				.desenvolvedores_4{
+					width: 90%;
+					height: 550px;
+					background-color: #131935;
+					margin: 20px 5% 0 5%;
+					border-radius: 5px;
+				}
+				.aling{
+					width: 100%;
+					height: 95%;
+					float: left;
+					/*background-color: red;*/
+
+				}
+				.espaco{
+					width: 100%;
+					height: 40px;
+				}
+				.aluno{
+					transform: translateY(-20px);
+					width: 60%;
+					height: 500px;
+					margin: 0 40% 0 0;
+				}
+				.aluno h2{
+					color: #b5a067;
+					text-align: center;
+					padding-top: 20px;
+					text-align: center;
+					font-size: 38px;
+					font-family: 'Teko', sans-serif;
+					font-weight: normal;
+				}
+				.dev{
+					width: 34%;
+					height: 250px;
+					border-radius: 50%;
+					margin: 0 33% 0 33%;
+					border: solid 4px #b5a067;
+					cursor: pointer;
+
+					transition: 1s;
+				}
+				.dev:hover{
+					opacity: 50%;
+					background-color: #eee;
+				}
+				.aluno p{
+					width: 80%;
+					margin:20px 10% 30px 10%;
+					text-align: justify;
+					color: white;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-size:16px;
+				}
+				.contratar{
+					background-color: #b5a067;
+					outline: none;
+					border: none;
+					border-radius: 2px;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-size: 16px;
+					color: black;
+					font-weight: bold;
+					cursor: pointer;
+					transition: 1s;
+					width: 50%;
+					margin: 0 25% 0 25%;
+					height: 40px;
+				}
+				.contratar:hover{
+					background-color: #131935;
+					border: solid 1px white;
+					color: white;
+				}
+				.ante_rodape{
+					width: 100%;
+					height: 50px;
+					background-color: white;
+					bottom: 0;
+				}
+				.informacoes{
+					transform: translateX(730px);
+					width: 40%
+				}
+				.eixo{
+					transform: translateY(-550px);
+				}
+				.informacoes h2{
+					color: #b5a067;
+					padding-top: 20px;
+					font-size: 38px;
+					font-family: 'Teko', sans-serif;
+					font-weight: normal;
+					margin:30px 0 30px 25%;
+				}
+				.informacoes input{
+					text-align: left;
+					font-size: 17px;
+					width: 400px;
+					height: 40px;
+					border: none;
+					outline: none;
+					border-radius: 3px;
+					margin-bottom: 20px;
+					padding-left: 5px;
+				}
+				.informacoes .topo{
+
+				}
+				.informacoes button{
+					margin-top: 20px;
+					text-align: center;
+					font-size: 16px;
+					width: 400px;
+					height: 40px;
+					border: none;
+					outline: none;
+					border-radius: 3px;
+					margin-bottom: 20px;
+					background-color:  #b5a067;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-weight: bold;
+					cursor: pointer;
+				}
+				.informacoes p{
+					font-family: 'Source Sans Pro', sans-serif;
+					color: white;
+				}
+				.rodape{
+					width: 100%;
+					height: 80px;
+					background-color: #131935;
+					bottom: 0;
+				}
+				.rodape p{
+					padding-left: 70px;
+					padding-top: 5px;
+					font-size: 16px;
+					color: white;
+					font-family: 'Source Sans Pro', sans-serif;
+				}
+				.rodape a{
+					text-decoration: none;
+					color: white;
+				}
+				.social{
+					margin-left: 65px;
+				}
+				.social button{
+					top: 5px;
+					height: 30px;
+					width: 30px;
+					border-radius: 50%;
+					border: 2px solid white;
+					margin-left: 5px;
+					cursor: pointer;
+					background-color: #b5a067;
+					font-weight: bold;
+					color: #131935;
+				}
+				.break h2{
+					padding-top: 0;
+				}
+				.break p{
+					margin-top: 0;
+				}
+				/* ---------NAVS EDIT CSS ----------*/
+
+
+				#menu1 ul {
+					background-color: #fff;
+					padding: 0px;
+					margin: 0px;
+					list-style: none;
+					width: 100%;
+
+				}
+				#menu1 ul li {
+					display: inline;
+				}
+				#menu1 ul li h1 {
+					padding: 0px 60px;
+					display: inline-block;
+					color: #003163;
+					font: 40px "archivo narrow";
+					letter-spacing: .1em;
+				}
+				#menu1 ul li h4 {
+					padding: 0px 60px;
+					color: #003163;
+					font: 18px "teko", sans-serif;
+					letter-spacing: .1em;
+					margin: 0px 0px 10.72px;
+				}
+				#menu1 ul li h1:hover {
+					color: #b5a067;
+					transition-duration: 0.2s;
+
+				}
+				/* --------------------MENU 2-------------------------- */
+				nav#menu2 {
+					background-color: #131935;
+				}
+				#menu2 ul {
+					padding: 30px;
+					margin-left: 20px;
+					list-style: none;
+					font: 18px "teko", sans-serif;
+
+				}
+				#menu2 ul li {
+					display: inline;
+					width: 100%;
+					padding: 8px, 16px;
+					letter-spacing: .05em;
+				}
+				#menu2 ul li a {
+					padding: 2px 10px;
+					display: inline-block;
+					color: #FFFFFF;
+				}
+				.social{
+					margin-left: 65px;
+				}
+				.social button{
+					top: 5px;
+					height: 30px;
+					width: 30px;
+					border-radius: 50%;
+					border: 2px solid white;
+					margin-left: 5px;
+					cursor: pointer;
+					background-color: #b5a067;
+					font-weight: bold;
+					color: #131935;
+				}
+
+			}
+		</style>
+	</head>
+	<body>
+		<header id="menu1">
+			<ul>
+				<li>
+
+					<h1>Hotel</h1>
+					<h4>JARDIM FLORESCENTE</h4>
+
+				</li>
+			</ul>
+		</header>
+
+		<nav id="menu2">
+			<ul>
+				<li><a href="../../index.html" style="text-decoration: none;">O HOTEL</a></li>
+            <li><a href="../../cliente/reserva.php" style="text-decoration: none;">FAZER RESERVA</a></li>
+            <li><a href="../../cliente/verifica_reserva.php" style="text-decoration: none;">VER RESERVA</a></li>
+            <li><a href="../Visualizar quartos/principal.html" style="text-decoration: none;">VISUZALIZAR QUARTOS</a></li>
+            <li><a href="../../administrador/login_adm.php" style="text-decoration: none;">SOU ADMINISTRADOR</a></li>
+            <li><a href="../Informar_erro.html" style="text-decoration: none;">DESCREVER ERRO</a></li>
+            <li><a href="desenvolvedores.html" style="text-decoration: none;">DESENVOLVEDORES</a></li>
+
+
+            <li><a href="../../cliente/cadastrar.php" style="text-decoration: none; float: right;">CADASTRAR</a></li>
+            <li><a href="../../cliente/login_cliente.php" style="text-decoration: none; float: right;">ENTRAR</a></li>
+
+			</ul>
+		</nav>
+
+		<!-- Felipe -->
+		<div class="desenvolvedores">
+			<div class="espaco"></div>
+			<div class="aling">
+				<div class="aluno">
+					<img src="Felipe.jpg" class="dev">
+					<h2>Felipe Cavalcante Rocha</h2>
+					<p>Atualmente com 17 anos é responsável por todo o copywrite/Marketing do site e estudante da Escola Estadual de Educação Profissional(EEEP) Manoel Mano, no 3° ano do curso técnico em informática.</p>
+
+					<button class="contratar">Contratar</button><!--  -->
+				</div>
+				<div class="eixo">
+					<div class="informacoes">
+						<h2>Informações</h2>
+						<div class="topo">
+							<p>Email:</p>
+							<input type="button" name="" value="email_aleatorio123@gmail.com">
+							<p>Telefone:</p>
+							<input type="button" name="" value="XX XXXX-XXXX">
+							<p>Bairro:</p>
+							<input type="button" name="" value="Bairro 1">
+							<p>Empresa que trabalha:</p>
+							<input type="button" name="" value="Empresa" class="afast">
+
+							<button class="saber">Saber mais</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Nilton -->
+		<div class="desenvolvedores_1">
+			<div class="espaco"></div>
+			<div class="aling">
+				<div class="aluno">
+					<img src="Nilton.jpg" class="dev">
+					<h2>Francisco Nilton Rodrigues Araujo</h2>
+					<p>Atualmente com 16 anos, é o responsável pelo design do site. Estudante da Escola Estadual de Educação Profissional(EEEP) Manoel Mano, no 3° ano do curso técnico em informática.</p>
+
+					<button class="contratar">Contratar</button><!--  -->
+				</div>
+				<div class="eixo">
+					<div class="informacoes">
+						<h2>Informações</h2>
+						<div class="topo">
+							<p>Email:</p>
+							<input type="button" name="" value="email_aleatorio123@gmail.com">
+							<p>Telefone:</p>
+							<input type="button" name="" value="XX XXXX-XXXX">
+							<p>Bairro:</p>
+							<input type="button" name="" value="Bairro 1">
+							<p>Empresa que trabalha:</p>
+							<input type="button" name="" value="Empresa" class="afast">
+
+							<button class="saber">Saber mais</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Rafael -->
+		<div class="desenvolvedores_2">
+			<div class="espaco"></div>
+			<div class="aling">
+				<div class="aluno">
+					<img src="Rafael.jpg" class="dev">
+					<h2>Francisco Rafael Lopes de Sousa</h2>
+					<p>Atualmente com 17 anos é responsável por todo o copywrite/Marketing do site; Estudante da Escola Estadual de Educação Profissional(EEEP) Manoel Mano, no 3° ano do curso técnico em informática.</p>
+
+					<button class="contratar">Contratar</button><!--  -->
+				</div>
+				<div class="eixo">
+					<div class="informacoes">
+						<h2>Informações</h2>
+						<div class="topo">
+							<p>Email:</p>
+							<input type="button" name="" value="email_aleatorio123@gmail.com">
+							<p>Telefone:</p>
+							<input type="button" name="" value="XX XXXX-XXXX">
+							<p>Bairro:</p>
+							<input type="button" name="" value="Bairro 1">
+							<p>Empresa que trabalha:</p>
+							<input type="button" name="" value="Empresa" class="afast">
+						</div>
+						<button class="saber" id="align_btn">Saber mais</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Gustavo -->
+		<div class="desenvolvedores_3">
+			<div class="espaco"></div>
+			<div class="aling">
+				<div class="aluno">
+					<img src="Gustavo.jpg" class="dev">
+					<h2>Gustavo Ferreira da Silva Neto</h2>
+					<p>Atualmente com 17 anos é responsável por todo o copywrite/Marketing do site; Estudante da Escola Estadual de Educação Profissional(EEEP) Manoel Mano, no 3° ano do curso técnico em informática.</p>
+
+					<button class="contratar">Contratar</button><!--  -->
+				</div>
+				<div class="eixo">
+					<div class="informacoes">
+						<h2>Informações</h2>
+						<div class="topo">
+							<p>Email:</p>
+							<input type="button" name="" value="email_aleatorio123@gmail.com">
+							<p>Telefone:</p>
+							<input type="button" name="" value="XX XXXX-XXXX">
+							<p>Bairro:</p>
+							<input type="button" name="" value="Bairro 1">
+							<p>Empresa que trabalha:</p>
+							<input type="button" name="" value="Empresa" class="afast">
+
+							<button class="saber">Saber mais</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Kauê -->
+		<div class="break">
+			<div class="desenvolvedores_4">
+				<div class="espaco"></div>
+				<div class="aling">
+					<div class="aluno">
+						<img src="Kauê.PNG" class="dev">
+						<h2>Kauê Alves Sena</h2>
+						<p>Atualmente com 17 anos é o desenvolvedor geral do site, sendo responsável, principalmente pelo backend. Além disso, é o líder e supervisor dos outros setores de desenvolvimento. Estudante da Escola Estadual de Educação Profissional(EEEP) Manoel Mano, no 3° ano do curso técnico em informática.</p>
+
+						<button class="contratar">Contratar</button><!--  -->
+					</div>
+					<div class="eixo">
+						<div class="informacoes">
+							<div class="topo">
+								<h2 class="info">Informações</h2>
+								<p>Email:</p>
+								<input type="button" name="" value="email_aleatorio123@gmail.com">
+								<p>Telefone:</p>
+								<input type="button" name="" value="XX XXXX-XXXX">
+								<p>Bairro:</p>
+								<input type="button" name="" value="Bairro 1">
+								<p>Empresa que trabalha:</p>
+								<input type="button" name="" value="Empresa" class="afast">
+
+								<button class="saber">Saber mais</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="ante_rodape"> 
+			</div>
+			<div class="rodape"> 
+				<p>© copyright <br><a href="">Hotel Jardim Florescente</a></p>
+
+				<div class="social"><button>F</button><button>In</button><button>G+</button></div>
+			</div>
+		</div>
+	</body>
+	</html>

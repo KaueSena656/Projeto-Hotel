@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="sortcut icon" href="https://epmanoelmano.online/hotel/wp-content/uploads/2021/03/cropped-LogoBeta3-180x180.png" type="image/x-icon" />;
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Teko:wght@300;400&display=swap" rel="stylesheet">
+    <title>Informar um problema</title>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+@media (max-width: 425px) {
+
+.estilo{
+    height: 1000px;
+    width: 100%;
+}
+img{
+    width: 100%;
+    height: 170px;
+}
+.navegar{
+    transform: translateY(-120px);
+    font-weight: normal;
+}
+#menu1 ul {
+        background-color: #fff;
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        width: 100%;
+
+    }
+    #menu1 ul li {
+        display: inline;
+    }
+    #menu1 ul li h1 {
+        padding: 0px 10px;
+        display: inline-block;
+        color: #003163;
+        font: 40px "archivo narrow";
+        letter-spacing: .1em;
+    }
+    #menu1 ul li h4 {
+        padding: 0px 10px;
+        color: #003163;
+        font: 18px "teko", sans-serif;
+        letter-spacing: .1em;
+        margin: 0px 0px 10.72px;
+    }
+    #menu1 ul li h1:hover {
+        color: #b5a067;
+        transition-duration: 0.2s;
+
+    }
+    /* --------------------MENU 2-------------------------- */
+    nav#menu2 {
+        background-color: #131935;
+        height: 215px;
+    }
+    #menu2 ul {
+        padding:20px;
+        list-style: none;
+        font: 18px "teko", sans-serif;
+
+    }
+    #menu2 ul li {
+        text-align: center;
+        display: inline;
+        width: 100%;
+        padding: 8px, 16px;
+        letter-spacing: .05em;
+    }
+    #menu2 ul li a {
+        width: 100%;/*
+        padding: 2px 10px;*/
+        display: inline-block;
+        color: #FFFFFF;
+    }
+
+    .rodape{
+    width: 100%;
+    height: 80px;
+    background-color: #131935;
+    bottom: 0;
+    }
+    .rodape p{
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: 16px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+    .rodape a{
+    text-decoration: none;
+    color: white;
+    }
+    .social{
+    margin-left: 15px;
+    }
+    .social button{
+    top: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #b5a067;
+    font-weight: bold;
+    color: #131935;
+    }
+    .alinhamento {
+                width: 330px;
+                background-color: #131935;
+                height: 630px;
+                border-radius: 5px;
+                margin: 20px 15px 0 15px;
+            }
+            .espaco {
+                height: 30px;
+            }
+            form {
+                width: 90%;
+                margin: 10px 5% 0 5%;
+                height: 550px;
+                background-color: white;
+                border-radius: 5px;
+            }
+            .elementos {
+                width: 90%;
+                margin: 10px 5% 0 5%;
+            }
+            input {
+                width: 90%;
+                margin: 0 5% 30px 5%;
+                height: 40px;
+                outline: none;
+                border: 1px solid #b5a067;
+                border-radius: 5px;
+                padding-left: 5px;
+                font-family: 'Archivo Narrow', sans-serif;
+                font-size: 16px;
+            }
+            h2 {
+                text-align: center;
+                font-family: 'Teko', sans-serif;
+                font-size: 32px;
+                color: #b5a067;
+                margin-bottom: 20px;
+            }
+            textarea {
+                width: 90%;
+                margin: 0 5% 30px 5%;
+                height: 80px;
+                outline: none;
+                border: 1px solid #b5a067;
+                border-radius: 5px;
+                font-family: 'Archivo Narrow', sans-serif;
+                font-size: 16px;
+                padding-left: 5px;
+            }
+            .b_enviar {
+                width: 60%;
+                margin: 0 20% 30px 20%;
+                height: 60px;
+                outline: none;
+                border: 2px solid #b5a067;
+                border-radius: 5px;
+                font-family: 'Archivo Narrow', sans-serif;
+                font-size: 16px;
+                background-color: #131935;
+                color: #b5a067;
+                cursor: pointer;
+                transition-property: background-color: ;
+                transition-duration: 1s;
+            }
+            .b_enviar:hover {
+                background-color: #1c2759;
+            }
+            form svg {
+                width: 30%;
+                height: 100px;
+                color: #b5a067;
+                margin: 30px 35% 0 35%;
+                animation: girar 8s ease-in-out;
+            }
+
+            @keyframes girar {
+                to {
+                    transform: rotate(26turn);
+                }
+            }
+        }
+        
+        @media (min-width: 1000px) and (max-width: 2600px) {
+            html,
+            body {
+                background-color: white;
+                height: 1500px;
+                width: 100%;
+            }
+            .alinhamento {
+                width: 80%;
+                background-color: #131935;
+                height: 700px;
+                border-radius: 5px;
+                margin: 40px 10% 0 10%;
+                transform: translateY(-30px);
+            }
+            .espaco {
+                height: 30px;
+            }
+            form {
+                width: 60%;
+                margin: 10px 20% 0 20%;
+                height: 600px;
+                background-color: white;
+                border-radius: 5px;
+            }
+            .elementos {
+                width: 80%;
+                margin: 10px 10% 0 10%;
+            }
+            input {
+                width: 80%;
+                margin: 0 10% 30px 10%;
+                height: 40px;
+                outline: none;
+                border: 1px solid #b5a067;
+                border-radius: 5px;
+                padding-left: 5px;
+                font-family: 'Archivo Narrow', sans-serif;
+                font-size: 16px;
+            }
+            h2 {
+                text-align: center;
+                font-family: 'Teko', sans-serif;
+                font-size: 38px;
+                color: #b5a067;
+                margin-bottom: 20px;
+            }
+            textarea {
+                width: 80%;
+                margin: 0 10% 30px 10%;
+                height: 80px;
+                outline: none;
+                border: 1px solid #b5a067;
+                border-radius: 5px;
+                font-family: 'Archivo Narrow', sans-serif;
+                font-size: 16px;
+                padding: 4px;
+            }
+            .b_enviar {
+                width: 40%;
+                margin: 0 30% 30px 30%;
+                height: 60px;
+                outline: none;
+                border: 2px solid #b5a067;
+                border-radius: 5px;
+                font-family: 'Archivo Narrow', sans-serif;
+                font-size: 16px;
+                background-color: #131935;
+                color: #b5a067;
+                cursor: pointer;
+                transition-property: background-color: ;
+                transition-duration: 1s;
+            }
+            .b_enviar:hover {
+                background-color: #1c2759;
+            }
+            form svg {
+                width: 30%;
+                height: 100px;
+                color: #b5a067;
+                margin: 30px 35% 0 35%;
+                animation: girar 8s ease-in-out;
+            }
+            @keyframes girar {
+                to {
+                    transform: rotate(26turn);
+                }
+            }
+        
+        nav {
+            width: 100%;
+            height: 80px;
+            background-color: #1c2759;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        .navegar {
+            transform: translateY(-240px);
+            font-weight: normal;
+            color: #b5a067;
+            font-size: 46px;
+        }
+            .rodape{
+            width: 100%;
+            height: 80px;
+            background-color: #131935;
+            bottom: 0;
+    }
+    .espaco{
+        height: 30px;
+
+    }
+    .rodape p{
+            padding-left: 70px;
+            padding-top: 5px;
+            font-size: 16px;
+            color: white;
+            font-family: 'Source Sans Pro', sans-serif;
+    }
+    .rodape a{
+            text-decoration: none;
+            color: white;
+    }
+    .social{
+            margin-left: 65px;
+    }
+    .social button{
+            top: 5px;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            border:2px solid white;
+            margin-left: 5px;
+            cursor: pointer;
+            background-color: #b5a067;
+            font-weight: bold;
+            color: #131935;
+    }
+        /* ---------NAVS EDIT CSS ----------*/
+
+
+        #menu1 ul {
+            background-color: #fff;
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            width: 100%;
+
+        }
+        #menu1 ul li {
+            display: inline;
+        }
+        #menu1 ul li h1 {
+            padding: 0px 60px;
+            display: inline-block;
+            color: #003163;
+            font: 40px "archivo narrow";
+            letter-spacing: .1em;
+        }
+        #menu1 ul li h4 {
+            padding: 0px 60px;
+            color: #003163;
+            font: 18px "teko", sans-serif;
+            letter-spacing: .1em;
+            margin: 0px 0px 10.72px;
+        }
+        #menu1 ul li h1:hover {
+            color: #b5a067;
+            transition-duration: 0.2s;
+
+        }
+        /* --------------------MENU 2-------------------------- */
+        nav#menu2 {
+            background-color: #131935;
+        }
+        #menu2 ul {
+            padding: 30px;
+            margin-left: 20px;
+            list-style: none;
+            font: 18px "teko", sans-serif;
+
+        }
+        #menu2 ul li {
+            display: inline;
+            width: 100%;
+            padding: 8px, 16px;
+            letter-spacing: .05em;
+        }
+        #menu2 ul li a {
+            padding: 2px 10px;
+            display: inline-block;
+            color: #FFFFFF;
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAV ABOVE (WHITE) -->
+    <header id="menu1">
+        <ul>
+            <li>
+
+                <h1>Hotel</h1>
+                <h4>JARDIM FLORESCENTE</h4>
+
+            </li>
+        </ul>
+    </header>
+
+    <nav id="menu2">
+        <ul>
+            <li><a href="../index.html" style="text-decoration: none;">O HOTEL</a></li>
+            <li><a href="../cliente/reserva.php" style="text-decoration: none;">FAZER RESERVA</a></li>
+            <li><a href="../cliente/verifica_reserva.php" style="text-decoration: none;">VER RESERVA</a></li>
+            <li><a href="Visualizar quartos/principal.html" style="text-decoration: none;">VISUZALIZAR QUARTOS</a></li>
+            <li><a href="../administrador/login_adm.php" style="text-decoration: none;">SOU ADMINISTRADOR</a></li>
+            <li><a href="Informar_erro.html" style="text-decoration: none;">DESCREVER ERRO</a></li>
+            <li><a href="Desenvolvedores/desenvolvedores.html" style="text-decoration: none;">DESENVOLVEDORES</a></li>
+
+
+            <li><a href="../cliente/cadastrar.php" style="text-decoration: none; float: right;">CADASTRAR</a></li>
+            <li><a href="../cliente/login_cliente.php" style="text-decoration: none; float: right;">ENTRAR</a></li>
+
+
+        </ul>
+    </nav>
+
+
+    <div>
+        <img src="header2.jpg">
+    </div>
+    <h2 class="navegar">Descrever o erro</h2>
+    <div class="alinhamento">
+
+
+        <div class="espaco"></div>
+
+        <form>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewbox="0 0 16 16">
+              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+          </svg>
+          <div class="elementos">
+            <h2>Informar um erro:</h2>
+            <input type="name" name="" placeholder="Seu nome completo">
+
+            <input type="email" name="" placeholder="Seu melhor email">
+            <textarea placeholder="Comente o erro aqui"></textarea>
+
+            <button type="submit" class="b_enviar">Enviar</button></div>
+        </form>
+
+    </div>
+    <div class="espaco"></div>
+    <div class="rodape"> 
+                <p>© copyright <br><a href="">Hotel Jardim Florescente</a></p>
+
+                <div class="social"><button>F</button><button>In</button><button>G+</button></div>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+body{
+	background-color: white;
+	height: 100vh;
+}
+.menu_lateral{
+	height: 100%;
+	width: 20%;
+	background-color: #202c39;
+	position: absolute;
+}
+.menu_lateral p{	
+	font-family: 'Poppins', sans-serif;
+	font-size: 26px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+}
+.menu_lateral hr{
+	width: 90%;
+	height: 1px;
+	background-color: white;
+	margin:10px 5% 0 5%;
+}
+.icons{
+	width: 70%;
+	margin:40px 15% 0 15%;
+	background-color: #202c39;
+}
+.icons a{
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+.icons a:hover{
+	color: #c3c3c3;
+}
+.icons a:hover svg{
+	color: #c3c3c3;
+}
+.icons a svg{
+	height: 20px;
+	width: 20px;
+	color: white;
+	transform: translateY(4px);
+}
+
+.container{
+	margin-left: 20%;
+	width: 80%;
+	height: 100vh;
+	background-color: #eee;
+}
+.container .nav{
+	top: 0;
+	width: 100%;
+	height: 68px;
+}
+.nav p{
+	float: left;
+	padding: 20px 100px;
+	font-family: 'Poppins', sans-serif;
+}
+.nav p svg{
+	height: 16px;
+	width: 16px;
+	color: crimson;
+	transform: translateY(2.5px);
+}
+.nav a{
+	padding-right: 100px;
+	padding-top: 20px;
+	float: right;
+	color: crimson;
+	font-family: 'Poppins';
+	text-decoration: none;
+}
+hr{
+	width: 100%;
+	height: 2px;
+	background-color: gray;
+}
+.box{
+	width: 90%;
+	height: 80%;
+	margin:20px 5% 0 5%;
+}
+.box h2{
+	font-family: 'Poppins';
+}
+.box .cad{
+	float: left;
+	width: 54%;
+	height: 300px;
+	background-color: white;
+	border-radius: 4px;
+}
+.box form{
+	width: 90%;
+	margin: 20px 5% 0 5%;
+}
+.box form input{
+	width: 49%;
+	height: 36px;
+	margin-bottom: 20px;
+	padding: 0.4rem;
+	font-family: 'Poppins';
+	border: 2px solid #202c39;
+	border-radius: 2px;
+	transition: 0.5s;
+}
+form input:focus{
+	background-color: #d4e9ff;
+}
+.box form button{
+	width: 49%;
+	height: 36px;
+	background-color: #202c39;
+	border-radius: 2px;
+	color: white;
+	font-family: 'Poppins';
+	transition: 0.5s;
+	cursor: pointer;
+}
+form button:hover{
+	opacity: 0.5;
+	border: 1px solid gray;
+}
+.atendimento{
+	width: 42%;
+	height: 300px;
+	background-color: white;
+	margin-left: 58%;
+	border-radius: 4px;
+}
+.atendimento h2{
+	font-family: 'Poppins';
+	text-align: center;
+	padding: 10px;
+}
+.atendimento p{
+	width: 80%;
+	height: 120px;
+	margin: 10px 10% 0 10%;
+	text-align: justify;
+}
+.atendimento a button{
+	width: 80%;
+	height: 36px;
+	margin:0 10% 15px 10%;
+	background-color: #202c39;
+	color: white;
+	font-family: 'Poppins';
+	cursor: pointer;
+	border-radius: 2px;
+	transition: 0.5s;
+}
+.atendimento a button:hover{
+	opacity: 0.5;
+	border: 1px solid gray;
+}
+.relatorio{
+	margin-top: 60px;
+	height: 132px;
+	width: 100%;
+	background-color: white;
+	border-radius: 4px;
+}
+.relatorio .text{
+	width: 70%;
+	height: 100%;	
+	float: left;
+}
+.relatorio .text h2{
+	padding-top: 10px;
+	color: black;
+	text-align: center;
+	font-family: 'Poppins';
+	font-size: 26px;	
+}
+.relatorio .text p{
+	margin: 10px 10% 0 10%;
+	text-align: justify;
+	font-size: 18px;
+}
+.relatorio button{
+	margin: 20px 1% 0 1%;
+	width: 28%;
+	height: 36px;
+	background-color: #202c39;
+	color: white;
+	font-family: 'Poppins';
+	border-radius: 2px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.relatorio button:hover{
+	opacity: 0.5;
+	border: 1px solid gray;
+}

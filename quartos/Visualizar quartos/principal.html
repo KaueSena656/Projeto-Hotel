@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Teko:wght@300;400&display=swap" rel="stylesheet">
+
+	<title>Visualizar quartos</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html. body{
+			width: 100%;
+		}
+		@media (max-width: 425px){
+			#menu1 ul {
+		background-color: #fff;
+		padding: 0px;
+		margin: 0px;
+		list-style: none;
+		width: 100%;
+
+	}
+	#menu1 ul li {
+		display: inline;
+	}
+	#menu1 ul li h1 {
+		padding: 0px 10px;
+		display: inline-block;
+		color: #003163;
+		font: 40px "archivo narrow";
+		letter-spacing: .1em;
+	}
+	#menu1 ul li h4 {
+		padding: 0px 10px;
+		color: #003163;
+		font: 18px "teko", sans-serif;
+		letter-spacing: .1em;
+		margin: 0px 0px 10.72px;
+	}
+	#menu1 ul li h1:hover {
+		color: #b5a067;
+		transition-duration: 0.2s;
+
+	}
+	/* --------------------MENU 2-------------------------- */
+	nav#menu2 {
+		background-color: #131935;
+		height: 215px;
+	}
+	#menu2 ul {
+		padding:20px;
+		list-style: none;
+		font: 18px "teko", sans-serif;
+
+	}
+	#menu2 ul li {
+		text-align: center;
+		display: inline;
+		width: 100%;
+		padding: 8px, 16px;
+		letter-spacing: .05em;
+	}
+	#menu2 ul li a {
+		width: 100%;/*
+		padding: 2px 10px;*/
+		display: inline-block;
+		color: #FFFFFF;
+	}
+
+.fim{
+		height: 3600px;
+		width: 100%;/*
+		background-color: red;*/
+	}
+	.rodape{
+	width: 100%;
+	height: 80px;
+	background-color: #131935;
+	bottom: 0;
+	}
+	.rodape p{
+	padding-left: 5px;
+	padding-top: 5px;
+	font-size: 16px;
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	}
+	.rodape a{
+	text-decoration: none;
+	color: white;
+	}
+	.social{
+	margin-left: 25px;
+	}
+	.social button{
+	top: 5px;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	border: 2px solid white;
+	margin-left: 5px;
+	cursor: pointer;
+	background-color: #b5a067;
+	font-weight: bold;
+	color: #131935;
+	}
+
+
+			.barco{
+				width: 100%;
+				height: 3000px;
+				float: left;
+				margin-top: 20px;
+			}
+			nav{
+				width: 100%;
+				height: 80px;
+				background-color: #131935;
+			}
+			.logo{
+				width: 15%;
+				margin: 0 42.5% 20px 42.5%;
+			}
+			.acomodacoes{
+				width: 100%;
+				margin-top: 10px;
+				margin-bottom: 150px;
+				height: 40px;
+			}
+			input[type="button"]{
+				width: 100%;
+				height: 100%;
+				border: 0;
+				outline: none;
+				font-family: 'Teko', sans-serif;
+				font-size: 22px;
+				transition: 1s;
+				background-color: #b5a067;
+				color: white;
+			}
+			
+			h2{
+				padding-top: 10px;
+				text-align: center;
+				font-size: 26px;
+				font-family: 'Teko', sans-serif;
+				color: #b5a067;
+				font-weight: normal;
+
+			}
+			p{
+				font-family: 'Source Sans Pro', sans-serif;
+				text-align: justify;
+				margin: 5px 25px 0 25px;
+				font-size: 16px;
+				color: white;
+			}
+			h1{
+				justify-content: center;
+				text-align: center;
+				font-size: 36px;
+				font-family: 'Roboto', sans-serif;
+				color: #b5a067;
+			}
+			.title{
+
+			}
+			.title p{
+				font-family: 'Source Sans Pro', sans-serif;
+				text-align: center;
+				margin-top: 10px;
+				font-size: 26px;
+				font-weight: bold;
+				color: #b5a067;	
+
+			}
+			.quartos{
+				margin: 30px 0 20px 0;
+				float: left;
+				width: 100%;
+				background-color: white;
+			}
+			.caixa_1{
+				height: 200px;
+				/*width: 525px;*/ 
+			}
+			.bloco_1{
+				height: 340px;
+				/*width: 525px;*/
+				background-color: #131935;
+				border-style: solid;
+				border-width: 0;
+				left: 0;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+				transform: translateY(-50px);
+			}
+			.universo{
+				width: 90%;
+				margin: 0 5% 0 5%;
+			}
+			.caixa_1 img{
+				
+				width: 100%;
+				height: 100%;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+			.bloco_1 button{
+				margin: 10px 25% 0 25%;
+			}
+			.caixa_2{
+				height: 200px;
+				/*width: 525px;*/
+
+			}
+			.bloco_2{
+				height: 380px;
+				/*width: 525px;*/
+				background-color: #131935;
+				border-style: solid;
+				border-width: 0;
+				left: 0;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+				transform: translateY(175px);
+			}
+			/*.universo{
+				width: 80%;
+				margin: 0 10% 0 10%;
+				}*/
+				.caixa_2 img{
+					transform: translateY(-450px);
+					width: 100%;
+					height: 100%;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+				}
+				.bloco_2 button{
+					margin: 50px 25% 0 25%;
+				}
+				.alinhamento{
+					transform: translateY(-50px);
+				}
+				.alinhamento_2{
+					transform: translateY(-100px);
+				}
+				.caixa_3{
+					height: 200px;
+					/*width: 525px;*/
+
+				}
+				.bloco_3{
+					transform: translateY(-50px);
+					height: 360px;
+					/*width: 525px;*/
+					background-color: #131935;
+					border-style: solid;
+					border-width: 0;
+					left: 0;
+					border-bottom-left-radius: 5px;
+					border-bottom-right-radius: 5px;
+				}
+				.caixa_3 img{
+					width: 100%;
+					height: 100%;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+				}
+				.bloco_3 button{
+					margin: 15px 25% 0 25%;
+				}
+				.caixa_4{
+					height: 200px;
+					/*width: 525px;*/
+
+				}
+				.bloco_4{
+					transform: translateY(125px);
+					height: 380px;
+					/*width: 525px;*/
+					background-color: #131935;
+					border-style: solid;
+					border-width: 0;
+					left: 0;
+					border-bottom-left-radius: 5px;
+					border-bottom-right-radius: 5px;
+				}
+			/*.universo{
+				width: 80%;
+				margin: 0 10% 0 10%;
+				}*/
+				.caixa_4 img{
+					transform: translateY(-500px);
+					width: 100%;
+					height: 100%;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+				}
+				.bloco_4 button{
+					margin: 50px 25% 0 25%;
+				}
+				.caixa_5{
+					height: 200px;
+					/*width: 525px;*/
+
+				}
+				.bloco_5{
+					transform: translateY(-50px);
+					height: 360px;
+					/*width: 525px;*/
+					background-color: #131935;
+					border-style: solid;
+					border-width: 0;
+					left: 0;
+					border-bottom-left-radius: 5px;
+					border-bottom-right-radius: 5px;
+				}
+				.caixa_5 img{
+					width: 100%;
+					height: 100%;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+				}
+				.bloco_5 button{
+					margin: 10px 25% 0 25%;
+				}
+				.barco button{
+
+				width: 50%;
+				height: 40px;
+				margin: 10px 25% 0 25%;
+				border-radius: 3px;
+				border: 0;
+				background-color:#b5a067;
+				font-size: 16px;
+				font-family: 'Roboto', sans-serif;
+				color: white;
+				outline: none;
+				cursor: pointer;
+				font-weight: normal;	
+
+				transition-property: background-color, border;
+				transition-duration: 1.5s, 1s, 0.5s;
+			}
+			button:hover{
+				background-color: #131935;
+				border: solid 1px white;
+			}
+			}
+			@media (min-width: 1200px) and (max-width: 2600px){
+				.barco{
+					width: 100%;
+					float: left;
+					margin-top: 20px;
+				}
+				.quartos{
+					margin: 30px 0 20px 0;
+					float: left;
+					width: 50%;
+					background-color: white;
+				}
+				.caixa_1{
+					height: 300px;
+					/*width: 525px;*/
+
+				}
+				.bloco_1{
+					height: 300px;
+					/*width: 525px;*/
+					background-color: #131935;
+					border-style: solid;
+					border-width: 0;
+					left: 0;
+					border-top-right-radius: 5px;
+					border-bottom-right-radius: 5px;
+				}
+				.universo{
+					width: 80%;
+					margin: 0 10% 0 10%;
+				}
+				.caixa_1 img{
+					width: 100%;
+					height: 100%;
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+				}
+				.caixa_3{
+					height: 300px;
+					/*width: 525px;*/
+
+				}
+				.bloco_3{
+					height: 300px;
+					/*width: 525px;*/
+					background-color: #131935;
+					border-style: solid;
+					border-width: 0;
+					left: 0;
+					border-top-right-radius: 5px;
+					border-bottom-right-radius: 5px;
+				}
+				.universo{
+					width: 80%;
+					margin: 0 10% 0 10%;
+				}
+				.caixa_3 img{
+					width: 100%;
+					height: 100%;
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+				}
+				.caixa_5{
+					height: 300px;
+					/*width: 525px;*/
+
+				}
+				.bloco_5{
+					height: 300px;
+					/*width: 525px;*/
+					background-color: #131935;
+					border-style: solid;
+					border-width: 0;
+					left: 0;
+					border-top-right-radius: 5px;
+					border-bottom-right-radius: 5px;
+				}
+				.universo{
+					width: 80%;
+					margin: 0 10% 0 10%;
+				}
+				.caixa_5 img{
+					width: 100%;
+					height: 100%;
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+				}
+				.barco button{
+
+					width: 40%;
+					height: 40px;
+					margin: 20px 30% 0 30%;
+					border-radius: 3px;
+					border: 0;
+					background-color:#b5a067;
+					font-size: 16px;
+					font-family: 'Roboto', sans-serif;
+					color: white;
+					outline: none;
+					cursor: pointer;
+					font-weight: normal;	
+
+					transition-property: background-color, border;
+					transition-duration: 1.5s, 1s, 0.5s;
+				}
+				button:hover{
+					background-color: #131935;
+					border: solid 1px white;
+				}
+
+				/*      */
+
+				.caixa_2{
+					height: 300px;
+					/*width: 525px;*/
+
+				}
+				.bloco_2{
+					height: 300px;
+					/*width: 525px;*/
+					background-color: #131935;
+					border-style: solid;
+					border-width: 0;
+					left: 0;
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+				}
+			/*.universo{
+				width: 80%;
+				margin: 0 10% 0 10%;
+				}*/
+				.caixa_2 img{
+					width: 100%;
+					height: 100%;
+					border-top-right-radius: 5px;
+					border-bottom-right-radius: 5px;
+				}
+				.caixa_4{
+					height: 300px;
+					/*width: 525px;*/
+
+				}
+				.bloco_4{
+					height: 300px;
+					/*width: 525px;*/
+					background-color: #131935;
+					border-style: solid;
+					border-width: 0;
+					left: 0;
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+				}
+			/*.universo{
+				width: 80%;
+				margin: 0 10% 0 10%;
+				}*/
+				.caixa_4 img{
+					width: 100%;
+					height: 100%;
+					border-top-right-radius: 5px;
+					border-bottom-right-radius: 5px;
+				}
+
+				h2{
+					padding-top: 10px;
+					text-align: center;
+					font-size: 26px;
+					font-family: 'Teko', sans-serif;
+					color: #b5a067;
+					font-weight: normal;
+
+				}
+				p{
+					font-family: 'Source Sans Pro', sans-serif;
+					text-align: justify;
+					margin: 20px 25px 0 25px;
+					font-size: 16px;
+					color: white;
+				}
+				h1{
+					justify-content: center;
+					text-align: center;
+					font-size: 36px;
+					font-family: 'Roboto', sans-serif;
+					color: #b5a067;
+				}
+				.title{
+
+				}
+				.title p{
+					font-family: 'Source Sans Pro', sans-serif;
+					text-align: center;
+					margin: 20px 25px 0 25px;
+					font-size: 26px;
+					font-weight: bold;
+					color: #b5a067;	
+
+				}
+				.acomodacoes{
+					width: 80%;
+					margin: 10px 10% 0 10%;
+					height: 40px;
+					margin-top: 50px;
+				}
+				input[type="button"]{
+					width: 19.5%;
+					height: 100%;
+					border: 0;
+					background-color: white;
+					outline: none;
+					font-family: 'Teko', sans-serif;
+					font-size: 22px;
+					opacity: 70%;
+
+					transition: 1s;
+				}
+				input[type="button"]:hover{
+					opacity: 100%;
+					background-color: #b5a067;
+					color: white;
+				}
+				nav{
+					width: 100%;
+					height: 80px;
+					background-color: #131935;
+				}
+				.logo{
+					width: 5%;
+					margin: 0 47.5% 20px 47.5%;
+				}
+.fim{
+		height: 2080px;
+		width: 100%;/*
+		background-color: red;*/
+	}
+	.rodape{
+			width: 100%;
+			height: 80px;
+			background-color: #131935;
+			bottom: 0;
+	}
+	.rodape p{
+			padding-left: 70px;
+			padding-top: 5px;
+			font-size: 16px;
+			color: white;
+			font-family: 'Source Sans Pro', sans-serif;
+	}
+	.rodape a{
+			text-decoration: none;
+			color: white;
+	}
+	.social{
+			margin-left: 90px;
+	}
+	.social button{
+			top: 5px;
+			height: 30px;
+			width: 30px;
+			border-radius: 50%;
+			border:2px solid white;
+			margin-left: 5px;
+			cursor: pointer;
+			background-color: #b5a067;
+			font-weight: bold;
+			color: #131935;
+	}
+
+				/* ---------NAVS EDIT CSS ----------*/
+
+
+				#menu1 ul {
+					background-color: #fff;
+					padding: 0px;
+					margin: 0px;
+					list-style: none;
+					width: 100%;
+
+				}
+				#menu1 ul li {
+					display: inline;
+				}
+				#menu1 ul li h1 {
+					padding: 0px 60px;
+					display: inline-block;
+					color: #003163;
+					font: 40px "archivo narrow";
+					letter-spacing: .1em;
+				}
+				#menu1 ul li h4 {
+					padding: 0px 60px;
+					color: #003163;
+					font: 18px "teko", sans-serif;
+					letter-spacing: .1em;
+					margin: 0px 0px 10.72px;
+				}
+				#menu1 ul li h1:hover {
+					color: #b5a067;
+					transition-duration: 0.2s;
+
+				}
+				/* --------------------MENU 2-------------------------- */
+				nav#menu2 {
+					background-color: #131935;
+				}
+				#menu2 ul {
+					padding: 30px;
+					margin-left: 20px;
+					list-style: none;
+					font: 18px "teko", sans-serif;
+
+				}
+				#menu2 ul li {
+					display: inline;
+					width: 100%;
+					padding: 8px, 16px;
+					letter-spacing: .05em;
+				}
+				#menu2 ul li a {
+					padding: 2px 10px;
+					display: inline-block;
+					color: #FFFFFF;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!-- NAV ABOVE (WHITE) -->
+		<header id="menu1">
+			<ul>
+				<li>
+
+					<h1>Hotel</h1>
+					<h4>JARDIM FLORESCENTE</h4>
+
+				</li>
+			</ul>
+		</header>
+
+		<nav id="menu2">
+			<ul>
+				<li><a href="../../index.html" style="text-decoration: none;">O HOTEL</a></li>
+			<li><a href="../../cliente/reserva.php" style="text-decoration: none;">FAZER RESERVA</a></li>
+			<li><a href="../../cliente/verifica_reserva.php" style="text-decoration: none;">VER RESERVA</a></li>
+			<li><a href="principal.html" style="text-decoration: none;">VISUZALIZAR QUARTOS</a></li>
+			<li><a href="../../administrador/login_adm.php" style="text-decoration: none;">SOU ADMINISTRADOR</a></li>
+			<li><a href="../Informar_erro.html" style="text-decoration: none;">DESCREVER ERRO</a></li>
+			<li><a href="../Desenvolvedores/desenvolvedores.html" style="text-decoration: none;">DESENVOLVEDORES</a></li>
+
+
+			<li><a href="../../cliente/cadastrar.php" style="text-decoration: none; float: right;">CADASTRAR</a></li>
+            <li><a href="../../cliente/login_cliente.php" style="text-decoration: none; float: right;">ENTRAR</a></li>
+
+
+			</ul>
+		</nav>
+
+
+
+
+
+		<!-- Img - Descrição -->
+		<div class="barco">	
+			<div class="title">
+
+				<img class="logo" src="cropped-LogoBeta3.png">
+				<h1>Acomodações</h1>
+
+
+				<p>Categorias de quartos livres</p>
+				<div class="acomodacoes">
+					<input type="button" class="b_1" name="" value="Luxo 1º andar">
+					<input type="button" name="" value="Valioso 2º andar">
+					<input type="button" name="" value="Suíte Junior 3º andar">
+					<input type="button" name="" value="Superior 4º andar">
+					<input type="button" name="" value="Gran Class 5º andar">
+				</div>
+			</div>
+			<!-- Div resposiva CELULAR -->
+
+			<div class="universo">
+				<div class="quartos">
+
+
+					<div class="caixa_1">
+
+						<img src="luxo.jpg">
+					</div>
+				</div>
+
+				<div class="quartos">
+					<div class="bloco_1">
+						<h2>Luxo<br>1º andar</h2>
+						<p>Com 24 metros quadrados e camas twins ou king size, o apartamento Luxo tem uma vista incrível, de frente total para o mar. Piso de madeira, TV a cabo, rádio relógio, amenidades, secador de cabelo, closet, roupões, sacola de praia e toalha de praia. Room Service 24h. WiFi disponível gratuitamente em todos os quartos. </p>
+						<br>
+
+						<a href="../../cliente/reserva.php"><button type="button">Fazer reserva</button></a>
+					</div>
+				</div>
+
+			</div>	
+			<!-- Divs intercaladas -->
+			<!-- Descrição - Img -->
+
+			<div class="alinhar">	
+				<div class="universo">
+					<div class="quartos">
+
+						<div class="bloco_2">
+							<h2>Valioso <br>2º andar</h2>
+							<p>O apartamento Studio tem 30 metros quadrados e cama king size, com vista de frente para o mar, mostrando o lindo visual da praia. Para melhor acolher você: piso de madeira, TV a cabo, rádio relógio, sofá, banheira, amenidades, secador de cabelo, closet, roupões, sacola de praia e toalha de praia. Room service 24h. WiFi disponível gratuitamente em todos os quartos.</p>
+
+
+							<a href="../../cliente/reserva.php"><button type="button">Fazer reserva</button></a>
+						</div>
+					</div>
+
+					<div class="quartos">
+
+						<div class="caixa_2">
+
+							<img src="valioso.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Divs intercaladas -->
+			<!-- Img - Descrição -->
+			<div class="alinhamento">
+				<div class="universo">
+					<div class="quartos">
+						<div class="caixa_3">
+
+							<img src="s_junior.jpg">
+						</div>
+					</div>
+
+					<div class="quartos">
+						<div class="bloco_3">
+							<h2>Suíte Junior <br>3º andar</h2>
+							<p>A Suíte Júnior tem 35 metros quadrados, cama king size e vista de frente para o mar. Muito conforto e aconchego: piso de madeira, TV a cabo, rádio relógio, banheira, amenidades, secador de cabelo, closet, roupões, antessala com sofá e mesa de trabalho. Room service 24h. WiFi disponível gratuitamente em todos os quartos.</p>
+							<br>
+
+							<a href="../../cliente/reserva.php"><button type="button">Fazer reserva</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Divs intercaladas -->
+			<!-- Descrição - Img -->
+			<div class="universo">
+				<div class="quartos">
+
+					<div class="bloco_4">
+						<h2>Superior <br>4º andar</h2>
+						<p>Com 30 metros quadrados e vista lateral, o apartamento Superior tem camas twins ou king size, piso de madeira, TV a cabo, rádio relógio, amenidades, secador de cabelo, closet, roupões, sacola de praia, toalha de praia e mesa para jantar com 2 lugares. Dispomos de três apartamentos equipados e adaptados para pessoas com necessidades especiais. Room Service 24h. </p>
+
+
+						<a href="../../cliente/reserva.php"><button type="button">Fazer reserva</button></a>
+					</div>
+				</div>
+
+				<div class="quartos">
+
+					<div class="caixa_4">
+
+						<img src="superior.jpg">
+					</div>
+				</div>
+			</div>
+
+			<!-- Divs intercaladas -->
+			<!-- Descrição - Img -->
+			<div class="alinhamento_2">
+				<div class="universo">
+					<div class="quartos">
+						<div class="caixa_5">
+
+							<img src="gran_class.jpg">
+						</div>
+					</div>
+
+					<div class="quartos">
+						<div class="bloco_5">
+							<h2>Gran Class (Superior)</h2>
+							<p>O apartamento Superior Gran Class tem 35 metros quadrados, vista lateral e camas twins ou king size. Têm piso de madeira, closet e mesa para jantar com 2 lugares. E tem o diferencial Gran Class de receber: Check in express. Serviço de cortesias no apartamento diariamente. Café da manhã servido no apartamento. Frigobar com itens diferenciados. Café e água grátis no apartamento. Balança digital. Pantufas e chinelos. Desconto de 10% no restaurante do hotel.</p>
+
+							<a href="../../cliente/reserva.php"><button type="button">Fazer reserva</button></a>
+						</div>
+					</div>
+				</div>
+			</div></div>
+
+		<div class="fim">
+		</div>
+			<div class="rodape">
+				<p>© copyright <br><a href="">Hotel Jardim Florescente</a></p>
+
+				<div class="social"><button>F</button><button>In</button><button>G+</button></div>
+			</div>	
+
+	</body>
+	</html>

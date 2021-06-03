@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sorteio</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: none;
+			box-sizing: border-box;
+		}
+		body{
+			background-color: #202c39;
+
+		}
+		.box{
+			width: 40%;
+			height: 390px;
+			margin: 120px 30% 0 30%;
+			border-radius: 1px;
+		}
+		.box .container{
+			height: 100%;
+			width: 100%;
+			background-color: white;
+		}
+		.container .topo{
+			height: 60px;
+			width: 100%;
+			background-color: #c3c3c3;
+		}
+		.topo h2{
+			color: #202c39;
+			text-align: center;
+			font-size: 24px;
+			font-family: 'Poppins', sans-serif;
+			padding-top: 10px;
+		}
+		form input[type="text"]{
+			height: 36px;
+			width: 45%;
+			margin-top: 25px;
+			border: 1px solid gray;
+			border-radius: 1px;
+			padding-left: 0.6rem;
+			margin-bottom: 30px;
+		}
+		form textarea{
+			width: 95%;
+			height: 100px;
+			margin:0 2.5% 30px 2.5%;
+			padding: 0.6rem;	
+			border: 1px solid gray;
+		}
+		form input[type="date"]{
+			width: 45%;
+			height: 38px;
+			margin: 0 2.5%;
+			float: left;
+			border: 1px solid gray;
+			padding-left: 0.6rem;
+		}
+		form button{
+			margin: 0 2.5% 30px 0;
+			width: 45%;
+			height: 38px;
+			background-color: #202c39;
+			color: white;
+			border-radius: 2px;
+			cursor: pointer;
+			font-family: 'Poppins', sans-serif;
+			transition: 0.5s;
+		}
+		form button:hover{
+			opacity: 0.5;
+			border: 1px solid gray;
+		}
+		.rodape{
+			width: 100%;
+			height: 40px;
+			background-color: #202c39;
+			border: 1px solid gray;
+			border-top: 1px solid white;
+		}
+		.rodape a{
+			font-family: 'Poppins', sans-serif;
+			color: white;
+			text-decoration: none;
+			padding: 5px 15px 0 0;
+			float: right;
+		}
+		.rodape a svg{
+			transform: translateY(2.5px);
+		}
+		.rodape a:hover{
+			color: gray;
+			text-decoration: underline;
+			transition: 0.5s;
+		}
+	</style>
+<body>
+
+<div class="box">
+<div class="container">
+	<div class="topo">
+		<h2>Cadastrar novo sorteio</h2>
+	</div> 
+	<form method="POST" action="cad_sorteio.php">
+	<input style="margin-left: 2.5%;" type="text" name="nome" placeholder="Nome do sorteio" required>
+	<input style="margin-left: 4%;" type="text" name="premio" placeholder="Prêmio" required>
+	<textarea name="descricao" placeholder="Descrição do sorteio" required></textarea>
+	<input type="date" name="datef" placeholder="Data do sorteio" required>
+		
+
+		<button type="submit">Cadastrar</button>
+	</form>
+<div class="rodape">
+	<a href="listarVencedor.php">Promover vencedor do sorteio <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg></a>
+</div>
+</div>
+</div>
+</body>
+</html>
