@@ -28,17 +28,17 @@ Ao gerente sortear um usuário é enviado uma mensagem ao cliente sorteado.
 <br>
 <br>
 <strong>COMO ACESSAR AS PÁGINAS?</strong><br>
-Acesso do gerente: Sistema Hotel\gerente\verifica.php<br>
+Acesso do gerente: gerente\verifica.php<br>
 Email: gerentemario111@gmail.com<br>
 Senha: mario123<br><br>
 
-Acesso do administrador: Sistema Hotel\administrador\login_adm.php<br>
+Acesso do administrador: administrador\login_adm.php<br>
 O login do administrador dependerá das informações que o gerente cadastrou no site<br><br>
 
 Como fazer/visualizar a reserva?<br>
-Como fazer a reserva: Sistema Hotel/Cliente/reserva.php<br>
-Como visualizar a reserva: Sistema Hotel/Cliente/verifica_reserva.php<br><br>
+Como fazer a reserva: Cliente/reserva.php<br>
+Como visualizar a reserva: Cliente/verifica_reserva.php<br><br>
 
 Como fazer o cadastro/login para concorrer a sorteios?<br>
-Acesso: Sistema Hotel/Cliente/cadastrar.php<br>
-login: Sistema Hotel/Cliente/login_cliente.php
+Acesso: Cliente/cadastrar.php<br>
+login: Cliente/login_cliente.php
